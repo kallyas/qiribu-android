@@ -182,9 +182,11 @@ Verified</string>
 <string name="msg_verification_on">Verification One</string>
 <string name="lbl_bank_account">Bank Account</string>
 <string name="msg_our_registratio">Our Registration process is very quick we promise.</string>
+<string name="msg_please_enter_valid_mo_nu">Please enter valid mobile number</string>
 <string name="msg_please_enter_valid_pa">Please enter valid password</string>
 <string name="msg_please_enter_valid_email">Please enter valid email</string>
 <string name="msg_please_enter_valid_text">Please enter valid text</string>
 <string name="msg_please_enter_valid_nu">Please enter valid number</string>
 <string name="msg_please_enter_valid_phone_nu">Please enter valid phone number</string>
+<string name="lbl_error">Error</string>
 </resources>
