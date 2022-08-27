@@ -37,7 +37,13 @@ class SignupVM : ViewModel(), KoinComponent {
       createRegisterLiveData.postValue(
       networkRepository.createRegister(
       contentType = """application/json""",
-          createRegisterRequest = CreateRegisterRequest()
+          createRegisterRequest = CreateRegisterRequest(
+          empRef = signupModel.value?.etTxtEmailValue,
+          nin = signupModel.value?.etTxtConfirmPassValue,
+          pin = signupModel.value?.etTxtPasswordValue,
+          lastName = signupModel.value?.etTxtLastNameValue,
+          phoneNumber = signupModel.value?.etTxtPhoneNumberValue,
+          firstName = signupModel.value?.etTxtFirstNameValue)
       )
       )
       progressLiveData.postValue(false)
@@ -46,7 +52,7 @@ class SignupVM : ViewModel(), KoinComponent {
 
   fun bindCreateRegisterResponse(response: CreateRegisterResponse) {
     val signupModelValue = signupModel.value ?:SignupModel()
-    prefs.setAccess_token(response.message)
+    prefs.setReg_success(response.message)
     signupModel.value = signupModelValue
   }
 }
