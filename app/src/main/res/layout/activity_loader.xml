@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loaderVM" type="com.qiribu.app.modules.loader.data.viewmodel.LoaderVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameLoader"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/image78318loaderOne"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_221pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="@dimen/_221pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_78318loader1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_78318loader1"/>
+    </FrameLayout>
+</layout>

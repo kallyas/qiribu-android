@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardingThreeVM" type="com.qiribu.app.modules.onboardingthree.data.viewmodel.OnboardingThreeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStacktools"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_54pxv"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameOnboardingThr"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+            <ImageView android:id="@+id/imageTools"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_450pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_tools_450x375}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_tools_450x375"/>
+            <LinearLayout android:id="@+id/linearColumngetstarted"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGetStarted"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_54pxh"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{onboardingThreeVM.onboardingThreeModel.txtGetStarted}"
+                    style="@style/txtLexendmedium25_1" tools:text="@string/lbl_get_started"/>
+                <com.asksira.loopingviewpager.LoopingViewPager
+                    android:gravity="start"
+                    android:id="@+id/imageSliderSlidersignin"
+                    android:layout_height="@dimen/_52pxv"
+                    android:layout_marginTop="@dimen/_34pxv"
+                    android:layout_width="match_parent"
+                    app:autoScroll="true" app:isInfinite="true" app:scrollInterval="5000"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnsignupwithem"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyleblack_900cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtSignupwithem"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_17pxv"
+                        android:layout_marginEnd="@dimen/_89pxh"
+                        android:layout_marginStart="@dimen/_89pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{onboardingThreeVM.onboardingThreeModel.txtSignupwithem}"
+                        style="@style/txtLexendregular15_3" tools:text="@string/msg_sign_up_with_em"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOrSignupwith"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_54pxh"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_marginTop="@dimen/_32pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{onboardingThreeVM.onboardingThreeModel.txtOrSignupwith}"
+                    style="@style/txtLexendregular14" tools:text="@string/lbl_or_sign_up_with"/>
+                <ImageView android:id="@+id/imageFrame10552"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_52pxh"
+                    android:layout_marginEnd="@dimen/_53pxh"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="@dimen/_206pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_frame10552"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_frame10552"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowrectangleeight"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_81pxv"
+                android:layout_marginTop="@dimen/_81pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylegray_1">
+                <View android:background="@color/gray_50"
+                    android:id="@+id/viewRectangleEight"
+                    android:layout_height="@dimen/_161pxh"
+                    android:layout_marginBottom="@dimen/_123pxv"
+                    android:layout_marginTop="@dimen/_92pxv" android:layout_width="@dimen/_31pxh"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnyouarealways"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_45pxv"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:layout_marginStart="@dimen/_14pxh"
+                    android:layout_marginTop="@dimen/_57pxv"
+                    android:layout_weight="0.91"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:id="@+id/txtYouarealways"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:text="@{onboardingThreeVM.onboardingThreeModel.txtYouarealways}"
+                        style="@style/txtLexendmedium30" tools:text="@string/msg_you_are_always"/>
+                    <TextView android:id="@+id/txtTakecareofli"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{onboardingThreeVM.onboardingThreeModel.txtTakecareofli}"
+                        style="@style/txtLexendregular18" tools:text="@string/msg_take_care_of_li"/>
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearRowuser"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_36pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+
+                        <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+                            android:id="@+id/indicatorUser"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15pxv"
+                            android:layout_marginTop="@dimen/_17pxv"
+                            android:layout_width="wrap_content"
+                            app:drawable_normal="@drawable/indicator_unselected_bg_deep_orange_51_radius_8"
+                            app:drawable_selected="@drawable/indicator_selected_bg_red_300_radius_8"
+                            app:indicator_size="@dimen/_9pxh" app:indicator_spacing="@dimen/_6pxh"/>
+                        <FrameLayout
+                            android:id="@+id/frameStackarrowone"
+                            android:layout_height="@dimen/_43pxv"
+                            android:layout_marginStart="@dimen/_55pxh"
+                            android:layout_width="@dimen/_96pxh" style="@style/groupStylered_300cornerRadius">
+                            <ImageView android:id="@+id/imageArrowOne"
+                                android:layout_gravity="bottom|center"
+                                android:layout_height="@dimen/_2pxh"
+                                android:layout_marginBottom="@dimen/_19pxv"
+                                android:layout_marginEnd="@dimen/_29pxh"
+                                android:layout_marginStart="@dimen/_29pxh"
+                                android:layout_marginTop="@dimen/_19pxv"
+                                android:layout_width="@dimen/_38pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_arrow1"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_arrow1"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

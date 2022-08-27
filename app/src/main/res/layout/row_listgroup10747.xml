@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listgroup10747RowModel" type="com.qiribu.app.modules.verificationone.data.model.Listgroup10747RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowgroup10747"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroup10749"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_22pxv"
+            android:paddingEnd="@dimen/_29pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_22pxv" android:singleLine="true"
+            android:text="@{listgroup10747RowModel.txtGroup10749}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_1"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroup10748"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_22pxv"
+            android:paddingEnd="@dimen/_27pxh"
+            android:paddingStart="@dimen/_28pxh"
+            android:paddingTop="@dimen/_22pxv" android:singleLine="true"
+            android:text="@{listgroup10747RowModel.txtGroup10748}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_22"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroup10745"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_22pxv"
+            android:paddingEnd="@dimen/_27pxh"
+            android:paddingStart="@dimen/_27pxh"
+            android:paddingTop="@dimen/_22pxv" android:singleLine="true"
+            android:text="@{listgroup10747RowModel.txtGroup10745}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_3"/>
+    </LinearLayout>
+</layout>

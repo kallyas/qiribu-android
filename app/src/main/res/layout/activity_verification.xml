@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="verificationVM" type="com.qiribu.app.modules.verification.data.viewmodel.VerificationVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearVerification"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:gravity="start"
+            android:id="@+id/image113915security"
+            android:layout_height="@dimen/_375pxv"
+            android:layout_marginTop="@dimen/_105pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_113915security}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_113915security"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtVerifyyournum"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_59pxh"
+            android:layout_marginStart="@dimen/_59pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{verificationVM.verificationModel.txtVerifyyournum}"
+            style="@style/txtLexendmedium20" tools:text="@string/msg_verify_your_num"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtHithereweha"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:text="@{verificationVM.verificationModel.txtHithereweha}"
+            style="@style/txtLexendregular15_1" tools:text="@string/msg_hi_there_we_ha"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnVerifyNumber"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_104pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_verify_number"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_verify_number"/>
+    </LinearLayout>
+</layout>

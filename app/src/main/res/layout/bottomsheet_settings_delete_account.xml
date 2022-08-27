@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="settingsDeleteAccountVM" type="com.qiribu.app.modules.settingsdeleteaccount.data.viewmodel.SettingsDeleteAccountVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSettingsDele"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnlinefour"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <View android:background="@color/red_300"
+                android:id="@+id/lineLineFour"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_5pxv"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_35pxv" android:layout_width="@dimen/_57pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDeleteAccount"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_37pxh"
+                android:layout_marginStart="@dimen/_37pxh"
+                android:layout_marginTop="@dimen/_38pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{settingsDeleteAccountVM.settingsDeleteAccountModel.txtDeleteAccount}"
+                style="@style/txtLexendregular15" tools:text="@string/lbl_delete_account"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtConfirmation"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_36pxh"
+                android:layout_marginStart="@dimen/_36pxh"
+                android:layout_marginTop="@dimen/_52pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{settingsDeleteAccountVM.settingsDeleteAccountModel.txtConfirmation}"
+                style="@style/txtLexendbold22" tools:text="@string/lbl_are_you_sure"/>
+            <TextView android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_37pxh"
+                android:layout_marginStart="@dimen/_37pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:text="@{settingsDeleteAccountVM.settingsDeleteAccountModel.txtDescription}"
+                style="@style/txtLexendregular15_1" tools:text="@string/msg_we_would_hate_t"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_gray_50_radius_10"
+                android:drawableEnd="@drawable/img_vector"
+                android:drawablePadding="@dimen/_30pxh"
+                android:ellipsize="end"
+                android:hint="@string/msg_enter_password"
+                android:id="@+id/etGroup10780"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_57pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_17pxv"
+                android:paddingEnd="@dimen/_22pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:singleLine="true"
+                android:text="@={settingsDeleteAccountVM.settingsDeleteAccountModel.etGroup10780Value}"
+                android:textColorHint="@color/red_300"
+                style="@style/etSolidRounded" tools:ignore="Autofill"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnDeleteAccountOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_45pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_18pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_delete_account"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_delete_account"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

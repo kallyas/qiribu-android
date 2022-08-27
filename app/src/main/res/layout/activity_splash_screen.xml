@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenVM" type="com.qiribu.app.modules.splashscreen.data.viewmodel.SplashScreenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameSplashscreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageQiribulogocor"
+            android:layout_gravity="top|center"
+            android:layout_height="@dimen/_136pxh"
+            android:layout_marginBottom="@dimen/_283pxv"
+            android:layout_marginEnd="@dimen/_119pxh"
+            android:layout_marginStart="@dimen/_119pxh"
+            android:layout_marginTop="@dimen/_283pxv"
+            android:layout_width="@dimen/_136pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_qiribulogocor}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_qiribulogocor"/>
+        <ImageView android:id="@+id/imageQiributextlog"
+            android:layout_gravity="bottom|center"
+            android:layout_height="@dimen/_186pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_94pxh"
+            android:layout_marginStart="@dimen/_94pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="@dimen/_186pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_qiributextlog}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_qiributextlog"/>
+    </FrameLayout>
+</layout>

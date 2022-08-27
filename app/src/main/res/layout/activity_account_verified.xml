@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="accountVerifiedVM" type="com.qiribu.app.modules.accountverified.data.viewmodel.AccountVerifiedVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearAccountverifie"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/image78318loaderOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_277pxh"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_142pxv"
+            android:layout_width="@dimen/_277pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_78318loader1_1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_78318loader1_1"/>
+        <TextView android:id="@+id/txtAccountVerifie"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_5pxh"
+            android:text="@{accountVerifiedVM.accountVerifiedModel.txtAccountVerifie}"
+            style="@style/txtLexendmedium30" tools:text="@string/msg_account_verifie"/>
+        <TextView android:gravity="start"
+            android:id="@+id/txtYouareallset"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_74pxh"
+            android:layout_marginStart="@dimen/_74pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="match_parent"
+            android:text="@{accountVerifiedVM.accountVerifiedModel.txtYouareallset}"
+            style="@style/txtLexendregular18" tools:text="@string/msg_you_are_all_set"/>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_blue_50_radius_10"
+            android:id="@+id/btnArrowleft"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_52pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_156pxv"
+            android:layout_width="@dimen/_52pxh"
+            android:paddingHorizontal="@dimen/_19pxh"
+            android:paddingVertical="@dimen/_19pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_arrowleft" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</layout>
