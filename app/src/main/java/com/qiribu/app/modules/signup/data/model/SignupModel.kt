@@ -20,25 +20,25 @@ data class SignupModel(
   /**
    * TODO Replace with dynamic value
    */
-  var etGroup10598Value: String? = null,
+  var etTxtFirstNameValue: String? = null,
   /**
    * TODO Replace with dynamic value
    */
-  var etGroup10600Value: String? = null,
+  var etTxtLastNameValue: String? = null,
   /**
    * TODO Replace with dynamic value
    */
-  var etGroup10601Value: String? = null,
+  var etTxtPhoneNumberValue: String? = null,
   /**
    * TODO Replace with dynamic value
    */
-  var etGroup10602Value: String? = null,
+  var etTxtEmailValue: String? = null,
   /**
    * TODO Replace with dynamic value
    */
-  var etGroup10603Value: String? = null,
+  var etTxtPasswordValue: String? = null,
   /**
    * TODO Replace with dynamic value
    */
-  var etGroup10604Value: String? = null
+  var etTxtConfirmPassValue: String? = null
 )
