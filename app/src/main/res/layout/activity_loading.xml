@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loadingVM" type="com.qiribu.app.modules.loading.data.viewmodel.LoadingVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLoading"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/image78318loaderOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_221pxh"
+            android:layout_marginEnd="@dimen/_77pxh"
+            android:layout_marginStart="@dimen/_77pxh"
+            android:layout_marginTop="@dimen/_295pxv"
+            android:layout_width="@dimen/_221pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_78318loader1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_78318loader1"/>
+        <ImageView android:id="@+id/imageQiributextlog"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_116pxh"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginEnd="@dimen/_77pxh"
+            android:layout_marginStart="@dimen/_77pxh"
+            android:layout_marginTop="@dimen/_166pxv"
+            android:layout_width="@dimen/_116pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_qiributextlog}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_qiributextlog"/>
+    </LinearLayout>
+</layout>

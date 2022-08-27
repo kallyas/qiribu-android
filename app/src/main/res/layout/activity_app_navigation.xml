@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="appNavigationVM" type="com.qiribu.app.modules.appnavigation.data.viewmodel.AppNavigationVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroupAP13"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearAppNavigation"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtAppNavigation"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{appNavigationVM.appNavigationModel.txtAppNavigation}"
+                style="@style/txtregular20" tools:text="@string/lbl_app_navigation"/>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtCheckYourAppsUIFromTheBelowDemoScreensOfYourApp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{appNavigationVM.appNavigationModel.txtCheckYourAppsUIFromTheBelowDemoScreensOfYourApp}"
+                style="@style/txtregular16" tools:text="@string/msg_check_your_app"/>
+            <View android:background="@color/black_900"
+                android:id="@+id/lineLine2"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+        </LinearLayout>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/scrollViewGroupAP12"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearGroupAP11"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <LinearLayout
+                    android:id="@+id/linearSettingsDeleteAccount"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSettingsDeleteAccount"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSettingsDeleteAccount}"
+                        style="@style/txtregular20" tools:text="@string/msg_settings_dele"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine3"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearLoading"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtLoading"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtLoading}"
+                        style="@style/txtregular20" tools:text="@string/lbl_loading"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine4"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearOnboardingFour"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtOnboardingFour"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtOnboardingFour}"
+                        style="@style/txtregular20" tools:text="@string/msg_onboarding_fou"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine5"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearCashout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtCashout"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtCashout}"
+                        style="@style/txtregular20" tools:text="@string/lbl_cashout2"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine6"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearSignIn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSignIn"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSignIn}"
+                        style="@style/txtregular20" tools:text="@string/lbl_sign_in2"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine7"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearFailure"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtFailure"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtFailure}"
+                        style="@style/txtregular20" tools:text="@string/lbl_failure"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine8"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearCashoutSuccess"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtCashoutSuccess"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtCashoutSuccess}"
+                        style="@style/txtregular20" tools:text="@string/lbl_cashout_success"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine9"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearAccountVerified"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtAccountVerified"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtAccountVerified}"
+                        style="@style/txtregular20" tools:text="@string/msg_account_verifie2"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine10"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearRegistrationPaymentInfo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtRegistrationPaymentInfo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtRegistrationPaymentInfo}"
+                        style="@style/txtregular20" tools:text="@string/msg_registration"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine11"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearSignup"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSignup"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSignup}"
+                        style="@style/txtregular20" tools:text="@string/lbl_signup"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine12"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearOnboardingThree"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtOnboardingThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtOnboardingThree}"
+                        style="@style/txtregular20" tools:text="@string/msg_onboarding_thr"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine13"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearSettingsEditPassword"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSettingsEditPassword"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSettingsEditPassword}"
+                        style="@style/txtregular20" tools:text="@string/msg_settings_edit"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine14"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearTransactionHistory"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtTransactionHistory"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtTransactionHistory}"
+                        style="@style/txtregular20" tools:text="@string/msg_transaction_his"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine15"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearCashoutOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtCashoutOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtCashoutOne}"
+                        style="@style/txtregular20" tools:text="@string/lbl_cashout_one"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine16"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearCashoutTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtCashoutTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtCashoutTwo}"
+                        style="@style/txtregular20" tools:text="@string/lbl_cashout_two"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine17"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearSplashScreen"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSplashScreen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSplashScreen}"
+                        style="@style/txtregular20" tools:text="@string/lbl_splash_screen"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine18"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearCashoutThree"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtCashoutThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtCashoutThree}"
+                        style="@style/txtregular20" tools:text="@string/lbl_cashout_three"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine19"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearOnboardingOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtOnboardingOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtOnboardingOne}"
+                        style="@style/txtregular20" tools:text="@string/lbl_onboarding_one"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine20"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearSignupOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSignupOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSignupOne}"
+                        style="@style/txtregular20" tools:text="@string/lbl_signup_one"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine21"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearInfoSaved"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtInfoSaved"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtInfoSaved}"
+                        style="@style/txtregular20" tools:text="@string/lbl_info_saved"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine22"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearVerification"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtVerification"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtVerification}"
+                        style="@style/txtregular20" tools:text="@string/lbl_verification"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine23"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearVerificationOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtVerificationOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtVerificationOne}"
+                        style="@style/txtregular20" tools:text="@string/msg_verification_on"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine24"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearHomeDashRTNoDropdown"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtHomeDashRTNoDropdown"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtHomeDashRTNoDropdown}"
+                        style="@style/txtregular20" tools:text="@string/msg_home_dash_rt"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine25"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRegistration"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtRegistration"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtRegistration}"
+                        style="@style/txtregular20" tools:text="@string/lbl_registration"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine26"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearSettings"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSettings"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSettings}"
+                        style="@style/txtregular20" tools:text="@string/lbl_settings"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine27"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearLoader"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtLoader"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtLoader}"
+                        style="@style/txtregular20" tools:text="@string/lbl_loader"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine28"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearFailureOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtFailureOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtFailureOne}"
+                        style="@style/txtregular20" tools:text="@string/lbl_failure_one"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine29"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearSettingsEditPaymentMethods"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSettingsEditPaymentMethods"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSettingsEditPaymentMethods}"
+                        style="@style/txtregular20" tools:text="@string/msg_settings_edit2"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine30"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearSettingsAddEmail"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSettingsAddEmail"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSettingsAddEmail}"
+                        style="@style/txtregular20" tools:text="@string/msg_settings_add"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine31"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearOnboardingTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtOnboardingTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtOnboardingTwo}"
+                        style="@style/txtregular20" tools:text="@string/lbl_onboarding_two"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine32"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearHomeDashRTDropdown"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtHomeDashRTDropdown"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtHomeDashRTDropdown}"
+                        style="@style/txtregular20" tools:text="@string/msg_home_dash_rt2"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine33"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

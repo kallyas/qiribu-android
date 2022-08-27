@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="settingsAddEmailVM" type="com.qiribu.app.modules.settingsaddemail.data.viewmodel.SettingsAddEmailVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSettingsadd"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearColumnlinefour"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <View android:background="@color/red_300"
+                android:id="@+id/lineLineFour"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_5pxv"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_35pxv" android:layout_width="@dimen/_57pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEmailAddress"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_37pxh"
+                android:layout_marginStart="@dimen/_37pxh"
+                android:layout_marginTop="@dimen/_34pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{settingsAddEmailVM.settingsAddEmailModel.txtEmailAddress}"
+                style="@style/txtLexendregular15_1" tools:text="@string/lbl_email_address"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_gray_50_radius_10"
+                android:ellipsize="end" android:hint="@string/lbl_email"
+                android:id="@+id/etLanguage"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@={settingsAddEmailVM.settingsAddEmailModel.etLanguageValue}"
+                android:textColorHint="@color/red_300"
+                style="@style/etSolidRounded" tools:ignore="Autofill"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSaveInformationOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_113pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_18pxv"
+                android:singleLine="true"
+                android:text="@string/msg_save_informatio"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/msg_save_informatio"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

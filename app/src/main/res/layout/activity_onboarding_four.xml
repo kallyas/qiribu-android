@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardingFourVM" type="com.qiribu.app.modules.onboardingfour.data.viewmodel.OnboardingFourVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearOnboardingFou"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStacktools"
+            android:layout_height="@dimen/_386pxv"
+            android:layout_marginTop="@dimen/_68pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageTools"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_377pxv"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_tools}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_tools"/>
+            <View android:background="@color/white_A700"
+                android:id="@+id/viewHop"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_161pxh"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_31pxh"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGetStarted"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{onboardingFourVM.onboardingFourModel.txtGetStarted}"
+            style="@style/txtLexendmedium25" tools:text="@string/lbl_get_started"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSignin"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_sign_in"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_sign_in"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSignUpWithMobileNo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/msg_sign_up_with_mo"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/msg_sign_up_with_mo"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtOrSignupwith"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{onboardingFourVM.onboardingFourModel.txtOrSignupwith}"
+            style="@style/txtLexendregular14" tools:text="@string/lbl_or_sign_up_with"/>
+        <ImageView android:id="@+id/imageFrame10552"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_52pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="@dimen/_206pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_frame10552"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_frame10552"/>
+    </LinearLayout>
+</layout>

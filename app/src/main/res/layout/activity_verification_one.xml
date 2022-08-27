@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="verificationOneVM" type="com.qiribu.app.modules.verificationone.data.viewmodel.VerificationOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameVerificationOn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnverification"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowverification"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtVerification"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_18pxv"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_weight="0.68"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{verificationOneVM.verificationOneModel.txtVerification}"
+                        style="@style/txtLexendmedium22_1" tools:text="@string/lbl_verification"/>
+                    <ImageView android:id="@+id/imageQiribulogobla"
+                        android:layout_height="@dimen/_60pxh"
+                        android:layout_marginStart="@dimen/_115pxh"
+                        android:layout_width="@dimen/_60pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_qiribulogobla}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_qiribulogobla"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <com.mukesh.OtpView android:focusableInTouchMode="true"
+                android:id="@+id/otpViewOtpview"
+                android:inputType="number"
+                android:itemBackground="@color/gray_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginStart="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_43pxv"
+                android:layout_width="wrap_content"
+                android:textColor="@color/red_300"
+                android:textSize="@dimen/_30pxh" app:OtpItemCount="4"
+                app:OtpItemHeight="@dimen/_66pxv"
+                app:OtpItemSpacing="@dimen/_10pxh"
+                app:OtpItemWidth="@dimen/_66pxh"
+                app:OtpLineColor="@android:color/transparent" app:OtpViewType="rectangle"/>
+            <TextView android:id="@+id/txtPleaseenterth"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:text="@{verificationOneVM.verificationOneModel.txtPleaseenterth}"
+                style="@style/txtLexendregular15_1" tools:text="@string/msg_please_enter_th"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtResendOTP"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{verificationOneVM.verificationOneModel.txtResendOTP}"
+                style="@style/txtLexendregular15_2" textUnderline="true" tools:text="@string/lbl_resend_otp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerListgroup10747"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_44pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_20pxh}" tools:itemCount="3" tools:listitem="@layout/row_listgroup10747"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowclose"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageClose"
+                    android:layout_height="@dimen/_70pxh"
+                    android:layout_width="@dimen/_70pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_close"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnZero"
+                    android:layout_height="@dimen/_70pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_width="@dimen/_70pxh"
+                    android:paddingBottom="@dimen/_22pxv"
+                    android:paddingEnd="@dimen/_27pxh"
+                    android:paddingStart="@dimen/_27pxh"
+                    android:paddingTop="@dimen/_22pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_0"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_2" tools:text="@string/lbl_0"/>
+                <ImageView android:id="@+id/imageFloatingicon"
+                    android:layout_height="@dimen/_70pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_width="@dimen/_70pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_floatingicon"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_floatingicon"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

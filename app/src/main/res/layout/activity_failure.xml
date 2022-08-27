@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="failureVM" type="com.qiribu.app.modules.failure.data.viewmodel.FailureVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearFailure"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/image78318loaderOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_277pxh"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_142pxv"
+            android:layout_width="@dimen/_277pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_78318loader1_277x277}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_78318loader1_277x277"/>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearColumnsomethingwent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_53pxv"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtSomethingwent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:text="@{failureVM.failureModel.txtSomethingwent}"
+                style="@style/txtLexendmedium30" tools:text="@string/msg_something_went"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtHmmThecash"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent"
+                android:text="@{failureVM.failureModel.txtHmmThecash}"
+                style="@style/txtLexendregular18" tools:text="@string/msg_hmm_the_cash"/>
+            <LinearLayout android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_156pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_blue_50_radius_10"
+                    android:id="@+id/btnArrowleft"
+                    android:layout_height="@dimen/_52pxh"
+                    android:layout_width="@dimen/_52pxh"
+                    android:paddingHorizontal="@dimen/_19pxh"
+                    android:paddingVertical="@dimen/_19pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_arrowleft" tools:ignore="ContentDescription"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnTryAgain"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_weight="0.83"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_18pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_18pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_try_again"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_try_again"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.qiribu.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.qiribu.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.qiribu.app.modules.homedashrtdropdown.ui.HomeDashRtDropdownActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qiribu.app.modules.onboardingtwo.ui.OnboardingTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.registrationpaymentinfo.ui.RegistrationPaymentInfoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.cashoutthree.ui.CashoutThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.onboardingone.ui.OnboardingOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.verificationone.ui.VerificationOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.signup.ui.SignupActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.signin.ui.SignInActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.loader.ui.LoaderActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.cashoutsuccess.ui.CashoutSuccessActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.homedashrtnodropdown.ui.HomeDashRtNoDropdownActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.settings.ui.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.infosaved.ui.InfoSavedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.failure.ui.FailureActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.onboardingfour.ui.OnboardingFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.cashoutone.ui.CashoutOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.cashouttwo.ui.CashoutTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.signupone.ui.SignupOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.verification.ui.VerificationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.registration.ui.RegistrationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.onboardingthree.ui.OnboardingThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.loading.ui.LoadingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.cashout.ui.CashoutActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.accountverified.ui.AccountVerifiedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.transactionhistory.ui.TransactionHistoryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.qiribu.app.modules.failureone.ui.FailureOneActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

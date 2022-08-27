@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listellipsesixTwoRowModel" type="com.qiribu.app.modules.homedashrtdropdown.data.model.ListellipsesixTwoRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnellipsesixTwo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearRowprice"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/linearRowellipsesixTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:layout_weight="0.43" android:layout_width="0dp" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_red_500_radius_4"
+                    android:id="@+id/viewEllipseSixTwo"
+                    android:layout_height="@dimen/_8pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_8pxh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCashoutTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_weight="0.88"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{listellipsesixTwoRowModel.txtCashoutTwo}"
+                    style="@style/txtLexendregular15_1" tools:text="@string/lbl_cashout2"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPriceSeven"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_146pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_weight="0.57" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{listellipsesixTwoRowModel.txtPriceSeven}"
+                style="@style/txtLexendregular15_1" tools:text="@string/lbl_30_000_ugx"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtPriceOne"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{listellipsesixTwoRowModel.txtPriceOne}"
+            style="@style/txtLexendregular12_2" tools:text="@string/msg_june_15th_0"/>
+    </LinearLayout>
+</layout>

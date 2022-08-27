@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSlidersigninModel" type="com.qiribu.app.modules.onboardingthree.data.model.ImageSliderSlidersigninModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnsignin"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50cornerRadius">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtSignin"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginEnd="@dimen/_130pxh"
+            android:layout_marginStart="@dimen/_131pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{imageSliderSlidersigninModel.txtSignin}"
+            style="@style/txtLexendregular15_2" tools:text="@string/lbl_sign_in"/>
+    </LinearLayout>
+</layout>
