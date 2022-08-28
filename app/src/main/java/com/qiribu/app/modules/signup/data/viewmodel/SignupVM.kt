@@ -38,9 +38,9 @@ class SignupVM : ViewModel(), KoinComponent {
       networkRepository.createRegister(
       contentType = """application/json""",
           createRegisterRequest = CreateRegisterRequest(
-          empRef = signupModel.value?.etTxtEmailValue,
-          nin = signupModel.value?.etTxtConfirmPassValue,
-          pin = signupModel.value?.etTxtPasswordValue,
+          empRef = signupModel.value?.etTxtEmpRefValue,
+          nin = signupModel.value?.etTxtNinValue,
+          pin = signupModel.value?.etTxtPinValue,
           lastName = signupModel.value?.etTxtLastNameValue,
           phoneNumber = signupModel.value?.etTxtPhoneNumberValue,
           firstName = signupModel.value?.etTxtFirstNameValue)
@@ -52,7 +52,7 @@ class SignupVM : ViewModel(), KoinComponent {
 
   fun bindCreateRegisterResponse(response: CreateRegisterResponse) {
     val signupModelValue = signupModel.value ?:SignupModel()
-    prefs.setReg_success(response.message)
+    prefs.setRegSuccess(response.message)
     signupModel.value = signupModelValue
   }
 }

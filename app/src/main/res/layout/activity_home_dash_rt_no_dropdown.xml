@@ -260,22 +260,12 @@
                 android:layout_marginStart="@dimen/_24pxh"
                 android:layout_marginTop="@dimen/_24pxv"
                 android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
-            <FrameLayout android:id="@+id/frameStackgroup10770"
+            <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/frameStackgroup10770"
                 android:layout_height="@dimen/_81pxv"
                 android:layout_marginTop="@dimen/_35pxv"
                 android:layout_width="match_parent" style="@style/groupStylegray_51">
-                <ImageView android:id="@+id/imageGroup10770"
-                    android:layout_gravity="top|center"
-                    android:layout_height="@dimen/_28pxh"
-                    android:layout_marginBottom="@dimen/_20pxv"
-                    android:layout_marginEnd="@dimen/_39pxh"
-                    android:layout_marginStart="@dimen/_39pxh"
-                    android:layout_marginTop="@dimen/_21pxv"
-                    android:layout_width="@dimen/_292pxh"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/img_group10770"
-                    tools:ignore="ContentDescription" tools:src="@drawable/img_group10770"/>
-            </FrameLayout>
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
         </LinearLayout>
     </LinearLayout>
 </layout>

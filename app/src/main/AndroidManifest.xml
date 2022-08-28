@@ -30,7 +30,7 @@
         <activity
             android:name="com.qiribu.app.modules.verificationone.ui.VerificationOneActivity" android:screenOrientation="portrait"/>
         <activity
-            android:name="com.qiribu.app.modules.signup.ui.SignupActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.signup.ui.SignupActivity" android:screenOrientation="fullSensor"/>
         <activity
             android:name="com.qiribu.app.modules.signin.ui.SignInActivity" android:screenOrientation="portrait"/>
         <activity
@@ -44,30 +44,30 @@
         <activity
             android:name="com.qiribu.app.modules.infosaved.ui.InfoSavedActivity" android:screenOrientation="portrait"/>
         <activity
-            android:name="com.qiribu.app.modules.failure.ui.FailureActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.failure.ui.FailureActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.onboardingfour.ui.OnboardingFourActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.onboardingfour.ui.OnboardingFourActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.cashoutone.ui.CashoutOneActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.cashoutone.ui.CashoutOneActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.cashouttwo.ui.CashoutTwoActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.cashouttwo.ui.CashoutTwoActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.signupone.ui.SignupOneActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.signupone.ui.SignupOneActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.verification.ui.VerificationActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.verification.ui.VerificationActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.registration.ui.RegistrationActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.registration.ui.RegistrationActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.onboardingthree.ui.OnboardingThreeActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.onboardingthree.ui.OnboardingThreeActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.loading.ui.LoadingActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.loading.ui.LoadingActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.cashout.ui.CashoutActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.cashout.ui.CashoutActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.accountverified.ui.AccountVerifiedActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.accountverified.ui.AccountVerifiedActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.transactionhistory.ui.TransactionHistoryActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.transactionhistory.ui.TransactionHistoryActivity" android:screenOrientation="fullSensor"/>
         <activity
-            android:name="com.qiribu.app.modules.failureone.ui.FailureOneActivity" android:screenOrientation="portrait"/>
+            android:name="com.qiribu.app.modules.failureone.ui.FailureOneActivity" android:screenOrientation="fullSensor"/>
     </application>
 </manifest>
