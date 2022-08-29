@@ -119,11 +119,6 @@ data class AppNavigationModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtSignupOne: String? = MyApp.getInstance().resources.getString(R.string.lbl_signup_one)
-  ,
-  /**
-   * TODO Replace with dynamic value
-   */
   var txtInfoSaved: String? = MyApp.getInstance().resources.getString(R.string.lbl_info_saved)
   ,
   /**

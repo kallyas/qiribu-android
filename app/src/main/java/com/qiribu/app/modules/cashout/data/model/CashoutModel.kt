@@ -55,17 +55,7 @@ data class CashoutModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtMobileMoney: String? = MyApp.getInstance().resources.getString(R.string.lbl_mobile_money)
-  ,
-  /**
-   * TODO Replace with dynamic value
-   */
-  var txtFeesapply: String? = MyApp.getInstance().resources.getString(R.string.lbl_fees_apply)
-  ,
-  /**
-   * TODO Replace with dynamic value
-   */
-  var etGroup10773Value: String? = null,
+  var etTxtCashOutAmountValue: String? = null,
   /**
    * TODO Replace with dynamic value
    */

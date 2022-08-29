@@ -52,8 +52,6 @@
         <activity
             android:name="com.qiribu.app.modules.cashouttwo.ui.CashoutTwoActivity" android:screenOrientation="portrait"/>
         <activity
-            android:name="com.qiribu.app.modules.signupone.ui.SignupOneActivity" android:screenOrientation="portrait"/>
-        <activity
             android:name="com.qiribu.app.modules.verification.ui.VerificationActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.qiribu.app.modules.registration.ui.RegistrationActivity" android:screenOrientation="portrait"/>

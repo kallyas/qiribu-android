@@ -8,8 +8,8 @@ import androidx.activity.viewModels
 import com.qiribu.app.R
 import com.qiribu.app.appcomponents.base.BaseActivity
 import com.qiribu.app.databinding.ActivityCashoutBinding
-import com.qiribu.app.modules.cashout.`data`.model.CashoutRowModel
 import com.qiribu.app.modules.cashout.`data`.model.SpinnerGroup10777Model
+import com.qiribu.app.modules.cashout.`data`.model.VectorRowModel
 import com.qiribu.app.modules.cashout.`data`.viewmodel.CashoutVM
 import com.qiribu.app.modules.cashoutthree.ui.CashoutThreeActivity
 import kotlin.Int
@@ -32,17 +32,17 @@ class CashoutActivity : BaseActivity<ActivityCashoutBinding>(R.layout.activity_c
     SpinnerGroup10777Adapter(this,R.layout.spinner_item,viewModel.spinnerGroup10777List.value?:
     mutableListOf())
     binding.spinnerGroup10777.adapter = spinnerGroup10777Adapter
-    val cashoutAdapter = CashoutAdapter(viewModel.cashoutList.value?:mutableListOf())
-    binding.recyclerCashout.adapter = cashoutAdapter
-    cashoutAdapter.setOnItemClickListener(
-    object : CashoutAdapter.OnItemClickListener {
-      override fun onItemClick(view:View, position:Int, item : CashoutRowModel) {
-        onClickRecyclerCashout(view, position, item)
+    val rowvectorAdapter = RowvectorAdapter(viewModel.rowvectorList.value?:mutableListOf())
+    binding.recyclerRowvector.adapter = rowvectorAdapter
+    rowvectorAdapter.setOnItemClickListener(
+    object : RowvectorAdapter.OnItemClickListener {
+      override fun onItemClick(view:View, position:Int, item : VectorRowModel) {
+        onClickRecyclerRowvector(view, position, item)
       }
     }
     )
-    viewModel.cashoutList.observe(this) {
-      cashoutAdapter.updateData(it)
+    viewModel.rowvectorList.observe(this) {
+      rowvectorAdapter.updateData(it)
     }
     binding.cashoutVM = viewModel
   }
@@ -54,10 +54,10 @@ class CashoutActivity : BaseActivity<ActivityCashoutBinding>(R.layout.activity_c
     }
   }
 
-  fun onClickRecyclerCashout(
+  fun onClickRecyclerRowvector(
     view: View,
     position: Int,
-    item: CashoutRowModel
+    item: VectorRowModel
   ): Unit {
     when(view.id) {
     }
