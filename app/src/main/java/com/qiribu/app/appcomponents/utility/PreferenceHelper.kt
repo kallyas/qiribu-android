@@ -37,4 +37,5 @@ class PreferenceHelper {
   }
 
   fun getRegSuccess(): String? = sharedPreference.getString("reg_success", null)
+
 }

@@ -45,26 +45,29 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(R.layout.activity_sig
 
   override fun setUpClicks(): Unit {
     binding.btnCreateAccount.setOnClickListener {
-      if(
-      viewModel.signupModel.value?.etTxtFirstNameValue.
-      isText(true)
-      && viewModel.signupModel.value?.etTxtLastNameValue.
-      isText(true)
-      && viewModel.signupModel.value?.etTxtPhoneNumberValue.
-      isMobileNumber(true)
-      && viewModel.signupModel.value?.etTxtPasswordValue.
-      isValidPassword(true)
-      && viewModel.signupModel.value?.etTxtEmailValue.
-      isValidEmail(true)
-      && viewModel.signupModel.value?.etTxtConfirmPassValue.
-      isValidPassword(true)) {
-        this@SignupActivity.hideKeyboard()
-        viewModel.callCreateRegisterApi()
-      }
+//      if(
+//      viewModel.signupModel.value?.etTxtFirstNameValue.
+//      isText(true)
+//      && viewModel.signupModel.value?.etTxtLastNameValue.
+//      isText(true)
+//      && viewModel.signupModel.value?.etTxtPhoneNumberValue.
+//      isMobileNumber(true)
+//      && viewModel.signupModel.value?.etTxtNinValue.
+//      isValidPassword(true)
+//      && viewModel.signupModel.value?.etTxtEmpRefValue.
+//      isValidEmail(true)
+//      && viewModel.signupModel.value?.etTxtPinValue.
+//      isValidPassword(true)) {
+//        this@SignupActivity.hideKeyboard()
+//        viewModel.callCreateRegisterApi()
+//      }
+      this@SignupActivity.hideKeyboard()
+      viewModel.callCreateRegisterApi()
     }
-    binding.etTxtFirstName.setOnClickListener {
-      // TODO please, add your navigation code here
-    }
+//    binding.etTxtFirstName.setOnClickListener {
+//      val destIntent = SignupOneActivity.getIntent(this, null)
+//      startActivity(destIntent)
+//    }
   }
 
   override fun addObservers(): Unit {
@@ -92,7 +95,7 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(R.layout.activity_sig
     viewModel.bindCreateRegisterResponse(response.data)
     val destIntent = SignInActivity.getIntent(this, null)
     startActivityForResult(destIntent, REQUEST_CODE_SIGN_IN_ACTIVITY)
-    this.overridePendingTransition(R.anim.bounce ,R.anim.slide_down )
+//    this.overridePendingTransition(R.anim.bounce ,R.anim.slide_down )
   }
 
   private fun onErrorCreateRegister(exception: Exception): Unit {

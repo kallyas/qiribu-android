@@ -11,7 +11,7 @@
 <string name="lbl_cashout_success">cashout success</string>
 <string name="msg_home_dash_rt">Home/Dash - RT no dropdown</string>
 <string name="lbl_email_address">Email Address</string>
-<string name="msg_confirm_passwor">Confirm Password</string>
+<string name="msg_pin">Enter your PIN</string>
 <string name="lbl_cashout_two">Cashout Two</string>
 <string name="lbl2">************</string>
 <string name="msg_settings_edit">Settings - edit password</string>
@@ -84,7 +84,7 @@ Account</string>
 <string name="lbl_ugx2"> UGX</string>
 <string name="msg_cashout_availab">Cashout available</string>
 <string name="lbl_cashout_one">Cashout One</string>
-<string name="lbl_password">Password</string>
+<string name="lbl_NIN">National ID Number</string>
 <string name="msg_we_have_saved_t">We have saved the new entries you made.</string>
 <string name="lbl_100_00_ugx2">100.00 UGX</string>
 <string name="msg_your_payday_is">Your payday is Today!</string>
@@ -131,7 +131,7 @@ Account</string>
 <string name="lbl_01st">01st</string>
 <string name="lbl">&#128523;</string>
 <string name="lbl_onboarding_two">Onboarding -Two</string>
-<string name="msg_email_optional">Email (Optional)</string>
+<string name="msg_emp_ref">Employer Reference Number</string>
 <string name="msg_we_are_sorry_we">We are sorry we could not save the entries made.</string>
 <string name="msg_registration">Registration - payment info</string>
 <string name="lbl_email">Email </string>

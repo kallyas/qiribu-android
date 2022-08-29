@@ -32,13 +32,13 @@ data class SignupModel(
   /**
    * TODO Replace with dynamic value
    */
-  var etTxtEmailValue: String? = null,
+  var etTxtEmpRefValue: String? = null,
   /**
    * TODO Replace with dynamic value
    */
-  var etTxtPasswordValue: String? = null,
+  var etTxtNinValue: String? = null,
   /**
    * TODO Replace with dynamic value
    */
-  var etTxtConfirmPassValue: String? = null
+  var etTxtPinValue: String? = null
 )
