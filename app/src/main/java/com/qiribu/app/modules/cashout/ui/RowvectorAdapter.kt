@@ -5,33 +5,33 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.qiribu.app.R
-import com.qiribu.app.databinding.RowCashoutBinding
-import com.qiribu.app.modules.cashout.`data`.model.CashoutRowModel
+import com.qiribu.app.databinding.RowRowvectorBinding
+import com.qiribu.app.modules.cashout.`data`.model.VectorRowModel
 import kotlin.Int
 import kotlin.collections.List
 
-class CashoutAdapter(
-  var list: List<CashoutRowModel>
-) : RecyclerView.Adapter<CashoutAdapter.RowCashoutVH>() {
+class RowvectorAdapter(
+  var list: List<VectorRowModel>
+) : RecyclerView.Adapter<RowvectorAdapter.RowRowvectorVH>() {
   private var clickListener: OnItemClickListener? = null
 
-  override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RowCashoutVH {
-    val view=LayoutInflater.from(parent.context).inflate(R.layout.row_cashout,parent,false)
-    return RowCashoutVH(view)
+  override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RowRowvectorVH {
+    val view=LayoutInflater.from(parent.context).inflate(R.layout.row_rowvector,parent,false)
+    return RowRowvectorVH(view)
   }
 
-  override fun onBindViewHolder(holder: RowCashoutVH, position: Int) {
-    val cashoutRowModel = CashoutRowModel()
+  override fun onBindViewHolder(holder: RowRowvectorVH, position: Int) {
+    val vectorRowModel = VectorRowModel()
     // TODO uncomment following line after integration with data source
-    // val cashoutRowModel = list[position]
-    holder.binding.cashoutRowModel = cashoutRowModel
+    // val vectorRowModel = list[position]
+    holder.binding.vectorRowModel = vectorRowModel
   }
 
   override fun getItemCount(): Int = 2
   // TODO uncomment following line after integration with data source
   // return list.size
 
-  public fun updateData(newData: List<CashoutRowModel>) {
+  public fun updateData(newData: List<VectorRowModel>) {
     list = newData
     notifyDataSetChanged()
   }
@@ -44,14 +44,14 @@ class CashoutAdapter(
     fun onItemClick(
       view: View,
       position: Int,
-      item: CashoutRowModel
+      item: VectorRowModel
     ) {
     }
   }
 
-  inner class RowCashoutVH(
+  inner class RowRowvectorVH(
     view: View
   ) : RecyclerView.ViewHolder(view) {
-    val binding: RowCashoutBinding = RowCashoutBinding.bind(itemView)
+    val binding: RowRowvectorBinding = RowRowvectorBinding.bind(itemView)
   }
 }

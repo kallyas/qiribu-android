@@ -22,7 +22,6 @@ import com.qiribu.app.extensions.neutralButton
 import com.qiribu.app.extensions.showProgressDialog
 import com.qiribu.app.modules.signin.ui.SignInActivity
 import com.qiribu.app.modules.signup.`data`.viewmodel.SignupVM
-import com.qiribu.app.modules.signupone.ui.SignupOneActivity
 import com.qiribu.app.network.models.createregister.CreateRegisterResponse
 import com.qiribu.app.network.resources.ErrorResponse
 import com.qiribu.app.network.resources.SuccessResponse
@@ -36,7 +35,7 @@ import retrofit2.HttpException
 class SignupActivity : BaseActivity<ActivitySignupBinding>(R.layout.activity_signup) {
   private val viewModel: SignupVM by viewModels<SignupVM>()
 
-  private val REQUEST_CODE_SIGN_IN_ACTIVITY: Int = 513
+  private val REQUEST_CODE_SIGN_IN_ACTIVITY: Int = 571
 
 
   override fun onInitialized(): Unit {

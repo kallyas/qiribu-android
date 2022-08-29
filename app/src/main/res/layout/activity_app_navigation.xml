@@ -444,28 +444,6 @@
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
                 </LinearLayout>
-                <LinearLayout android:id="@+id/linearSignupOne"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical" style="@style/groupStylewhite_A700">
-                    <TextView android:ellipsize="end"
-                        android:gravity="start"
-                        android:id="@+id/txtSignupOne"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_10pxv"
-                        android:layout_marginEnd="@dimen/_20pxh"
-                        android:layout_marginStart="@dimen/_20pxh"
-                        android:layout_marginTop="@dimen/_10pxv"
-                        android:layout_width="match_parent"
-                        android:singleLine="true"
-                        android:text="@{appNavigationVM.appNavigationModel.txtSignupOne}"
-                        style="@style/txtregular20" tools:text="@string/lbl_signup_one"/>
-                    <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine21"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_height="@dimen/_1pxv"
-                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
-                </LinearLayout>
                 <LinearLayout android:id="@+id/linearInfoSaved"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
@@ -483,7 +461,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtInfoSaved}"
                         style="@style/txtregular20" tools:text="@string/lbl_info_saved"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine22"
+                        android:id="@+id/lineLine21"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -505,7 +483,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtVerification}"
                         style="@style/txtregular20" tools:text="@string/lbl_verification"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine23"
+                        android:id="@+id/lineLine22"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -527,7 +505,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtVerificationOne}"
                         style="@style/txtregular20" tools:text="@string/msg_verification_on"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine24"
+                        android:id="@+id/lineLine23"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -550,7 +528,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtHomeDashRTNoDropdown}"
                         style="@style/txtregular20" tools:text="@string/msg_home_dash_rt"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine25"
+                        android:id="@+id/lineLine24"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -572,7 +550,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtRegistration}"
                         style="@style/txtregular20" tools:text="@string/lbl_registration"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine26"
+                        android:id="@+id/lineLine25"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -594,7 +572,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtSettings}"
                         style="@style/txtregular20" tools:text="@string/lbl_settings"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine27"
+                        android:id="@+id/lineLine26"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -616,7 +594,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtLoader}"
                         style="@style/txtregular20" tools:text="@string/lbl_loader"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine28"
+                        android:id="@+id/lineLine27"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -638,7 +616,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtFailureOne}"
                         style="@style/txtregular20" tools:text="@string/lbl_failure_one"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine29"
+                        android:id="@+id/lineLine28"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -661,7 +639,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtSettingsEditPaymentMethods}"
                         style="@style/txtregular20" tools:text="@string/msg_settings_edit2"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine30"
+                        android:id="@+id/lineLine29"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -683,7 +661,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtSettingsAddEmail}"
                         style="@style/txtregular20" tools:text="@string/msg_settings_add"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine31"
+                        android:id="@+id/lineLine30"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -705,7 +683,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtOnboardingTwo}"
                         style="@style/txtregular20" tools:text="@string/lbl_onboarding_two"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine32"
+                        android:id="@+id/lineLine31"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -727,7 +705,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txtHomeDashRTDropdown}"
                         style="@style/txtregular20" tools:text="@string/msg_home_dash_rt2"/>
                     <View android:background="@color/bluegray_400"
-                        android:id="@+id/lineLine33"
+                        android:id="@+id/lineLine32"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>

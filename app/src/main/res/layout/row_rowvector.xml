@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="vectorRowModel" type="com.qiribu.app.modules.cashout.data.model.VectorRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnvector"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylecornerRadius">
+        <View android:background="@color/bluegray_701"
+            android:id="@+id/viewVector"
+            android:layout_height="@dimen/_4pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_17pxv" android:layout_width="@dimen/_20pxh"/>
+        <View android:background="@color/bluegray_701"
+            android:id="@+id/viewVectorOne"
+            android:layout_height="@dimen/_18pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_20pxh"/>
+        <View android:background="@color/bluegray_701"
+            android:id="@+id/viewVectorTwo"
+            android:layout_height="@dimen/_4pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_20pxh"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtMobileMoney"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{vectorRowModel.txtMobileMoney}"
+            style="@style/txtLexendregular14" tools:text="@string/lbl_mobile_money"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtFeesapply"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{vectorRowModel.txtFeesapply}"
+            style="@style/txtLexendregular12" tools:text="@string/lbl_fees_apply"/>
+    </LinearLayout>
+</layout>

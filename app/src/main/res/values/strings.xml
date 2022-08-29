@@ -20,7 +20,6 @@
 <string name="lbl_first_name">First Name</string>
 <string name="lbl_signup">Signup</string>
 <string name="lbl_mobile_money">Mobile Money</string>
-<string name="lbl_bezos">Bezos</string>
 <string name="msg_hi_there_we_ha">Hi there, we have sent you a 4-digit OTP to your mobile number.</string>
 <string name="lbl_new_password">New Password</string>
 <string name="lbl_airtel">Airtel</string>
@@ -28,7 +27,6 @@
 Account</string>
 <string name="lbl_payday_deposit">Payday Deposit</string>
 <string name="lbl_app_navigation">App Navigation</string>
-<string name="lbl_256_940003000">+256 940003000</string>
 <string name="msg_amount_10_300">Amount - 10,300 UGX</string>
 <string name="msg_we_would_hate_t">We would hate to see you go. Note this process is irriversible and would require your password as confirmation to delete your account.</string>
 <string name="lbl_edit_password">Edit Password</string>
@@ -136,7 +134,6 @@ Account</string>
 <string name="msg_emp_ref">Employer Reference Number</string>
 <string name="msg_we_are_sorry_we">We are sorry we could not save the entries made.</string>
 <string name="msg_registration">Registration - payment info</string>
-<string name="lbl_subalunaba_1">Subalunaba#1</string>
 <string name="lbl_email">Email </string>
 <string name="lbl_80">80%</string>
 <string name="lbl_0">0</string>
@@ -169,11 +166,9 @@ Account</string>
 <string name="lbl_settings">Settings</string>
 <string name="lbl_0_ugx">0 UGX</string>
 <string name="lbl_or">~ OR ~</string>
-<string name="msg_jeffbezos_amazo">Jeffbezos@amazon.com</string>
 <string name="lbl_delete_account">Delete Account</string>
 <string name="msg_account_verifie">Account
 Verified</string>
-<string name="lbl_signup_one">Signup One</string>
 <string name="msg_sign_up_with_em">Sign up with email</string>
 <string name="lbl_10_300"> - 10,300</string>
 <string name="msg_edit_payment_me">Edit payment method</string>
